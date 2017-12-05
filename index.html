@@ -62,13 +62,37 @@
 <script src="js/w3.js"></script>
 <!--add script to ad elements from sepparat files-->
 	</head>
+
 	<body>
-
-		<header>
-		<div w3-include-html="menu.html"></div>
-		<!-- in the menu.html is everything that has to be in the headre (menu)-->
-
-   </header>
+	<div class="box-wrap">
+		<header role="banner" id="fh5co-header">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="fh5co-navbar-brand">
+								<a class="fh5co-logo" href="index.html"><img src="images/brand-nav.png" alt="Closest Logo"></a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<ul class="nav text-center">
+								<li ><a href="index.html"><span>О нас</span></a></li>
+								<li class="active"><a href="insider.html">Блог</a></li>
+								<li><a href="services.html">Полезности</a></li>
+								<li><a href="contact.html">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul class="social">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
 
 		<!-- END: header -->
 		<section id="intro">
@@ -143,9 +167,40 @@
 		</section>
 
 		<section id="services">
-			<div w3-include-html="downmenu.html"></div>
-			<!--  в отдельном файле три ссылки с иконками "гижнее меню" -->
 
+			  <div class="container">
+			    <div class="row">
+			      <div class="col-md-4 animate-box">
+			        <div class="service">
+			          <div class="service-icon">
+			            <i class="icon-pencil"></i>
+			          </div>
+			          <h2>Путевые заметки</h2>
+			          <p>Дневник путешествий <a>Даши</a>, <a>Оли</a> и <a>Лизы</a></p>
+			        </div>
+			      </div>
+			      <div class="col-md-4 animate-box">
+			        <div class="service">
+			          <div class="service-icon">
+			            <i class="icon-check"></i>
+			          </div>
+			          <h2>Полезности</h2>
+			          <p>Собираем лучшие лайфхаки</p>
+			        </div>
+			      </div>
+			      <div class="col-md-4 animate-box">
+			        <div class="service">
+			          <div class="service-icon">
+			            <i class="icon-map"></i>
+			          </div>
+			          <h2>Карта</h2>
+			          <p>Где мы были и куда еще обязательно поедем!</p>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+		<!--<div w3-include-html="downmenu.html"></div>
+			 в отдельном файле три ссылки с иконками "нижнее меню" -->
 		</section>
 
 		<footer id="footer" role="contentinfo">
