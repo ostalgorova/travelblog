@@ -61,7 +61,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 8px 14px;
     text-decoration: none;
     color: #0088cc;
-    border: 1px solid #e5e5e5;
 }
 
 .main-menu > li {
@@ -70,19 +69,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .sub-menu {
     position: absolute;
-    top: 5px;
-    left: 170px;
+    bottom: 10px;
     z-index: 10;
     width: 150px;
     margin: 0;
     padding: 0;
     list-style: none;
     background: #52d3aa;
-}
+{
 
 .main-menu > li:hover > .sub-menu {
-    display: block;
-  }
+  {
 
   
 ::-webkit-selection {
