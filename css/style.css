@@ -57,6 +57,10 @@ ul.submenu {
     background-color: white;
     border: 1px solid red;
 }
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
   
 ::-webkit-selection {
   color: #fcfcfc;
