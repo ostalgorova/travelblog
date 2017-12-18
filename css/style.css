@@ -49,12 +49,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ul.submenu {
+  display: none;
     position: relative;
-    display: inline-block;
     bottom: 10px;
     background-color: #52d3aa !important;
-  opacity: 0.65;
+  opacity: 0.70;
 }
+
+#nav ul.submenu {
+    white-space:nowrap; 
+    display:block;
+}
+
+#nav li:hover ul
+    left:0;
+    opacity:1;
+  }
 
 ul.menu > li:hover > ul.submenu {
     display: block;
