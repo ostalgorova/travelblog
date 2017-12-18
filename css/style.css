@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
 }
 
-.main-menu a {
+.main-menu li {
     display: block;
     margin-bottom: -1px;
     padding: 8px 14px;
@@ -68,7 +68,8 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.main-menu .sub-menu {
+.submenu {
+  display: none;
     position: absolute;
     top: 5px;
     left: 170px;
@@ -77,18 +78,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     list-style: none;
-    background: #fcf8e3;
+    background: #52d3aa;
 }
 
-ul.submenu {
-  display: none;
-    position: relative;
-    bottom: 10px;
-    background-color: #52d3aa !important;
-  opacity: 0.70;
-}
-
-ul.menu > li:hover > ul.submenu {
+.main-menu > li:hover > ul.submenu {
     display: block;
   }
 
