@@ -50,10 +50,8 @@ h1, h2, h3, h4, h5, h6 {
 
 ul.submenu {
     display: none;
-    position: absolut;
-    width: 120px;
-    top: 37px;
-    left: 0;
+    position: relative;
+    bottom: 10px;
     background-color: grey;
 }
 
