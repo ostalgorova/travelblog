@@ -206,7 +206,7 @@
 	var $form = $('form#feedback'),
     url = 'https://script.google.com/macros/s/AKfycbyGAPDIkhSD-i1zT27jYvjaYDFaTVd3UHtrPwFdkqUyzdoPv97U/exec'
 
-$('#submit-form').on('click', function(e) {
+$('#submit').on('click', function(e) {
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
