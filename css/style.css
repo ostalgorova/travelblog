@@ -53,7 +53,7 @@ ul.submenu {
     position: relative;
     bottom: 10px;
     background-color: #52d3aa !important;
-  opacity: 0.50;
+  opacity: 0.65;
 }
 
 ul.menu > li:hover > ul.submenu {
