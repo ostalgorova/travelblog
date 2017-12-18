@@ -54,16 +54,12 @@ ul.submenu {
     bottom: 10px;
     background-color: #52d3aa !important;
   opacity: 0.65;
+  navigation: dropdowmn
 }
 
 ul.menu > li:hover > ul.submenu {
     display: block;
   }
-
-li:hover ul.submenu {
-text-decoration: none;
--webkit-transition: -webkit-transform 0.075s linear;
-}
 
   
 ::-webkit-selection {
