@@ -116,23 +116,23 @@
 							</div>
 							<div class="col-md-6 field">
 								<label for="lastname">Фамилия</label>
-								<input type="text" name="FName" id="lastname" class="form-control">
+								<input type="text" name="LName" id="lastname" class="form-control">
 							</div>
 						</div>
 						<div class="form-group row">
 							<div class="col-md-6 field">
 								<label for="email">Эл.почта</label>
-								<input type="text" name="FName" id="email" class="form-control">
+								<input type="text" name="Email" id="email" class="form-control">
 							</div>
 							<div class="col-md-6 field">
 								<label for="phone">Телефон</label>
-								<input type="text" name="FName" id="phone" class="form-control">
+								<input type="text" name="Phone" id="phone" class="form-control">
 							</div>
 						</div>
 						<div class="form-group row">
 							<div class="col-md-12 field">
 								<label for="message">Сообщение</label>
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+								<textarea name="Message" id="message" cols="30" rows="10" class="form-control"></textarea>
 							</div>
 						</div>
 						<div class="form-group row">
@@ -201,10 +201,29 @@
 			</div>
 		</footer>
 	</div>
+
+	<script>
+	var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbyGAPDIkhSD-i1zT27jYvjaYDFaTVd3UHtrPwFdkqUyzdoPv97U/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
+</script>
 	<!-- END: box-wrap -->
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
+	<!--дополнение после подключения гугл-форм ниде-->
+	<script src="js/jquery.serialize-object.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
