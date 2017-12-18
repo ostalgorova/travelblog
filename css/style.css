@@ -58,6 +58,7 @@ ul.submenu {
 
 ul.menu > li:hover > ul.submenu {
     display: block;
+  position: absolute;
   }
 
   
