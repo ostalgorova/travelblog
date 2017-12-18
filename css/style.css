@@ -58,7 +58,13 @@ ul.submenu {
 
 ul.menu > li:hover > ul.submenu {
     display: block;
+  }
+
+li:hover ul.submenu {
+text-decoration: none;
+webkit-transition: -webkit-transform 0.075s linear;
 }
+
   
 ::-webkit-selection {
   color: #fcfcfc;
