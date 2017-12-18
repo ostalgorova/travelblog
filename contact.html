@@ -98,7 +98,7 @@
 					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
 						<div class="intro animate-box">
 							<h1>Связаться с нами</h1>
-							<h2>Мы всегда открыты к новым контактам и будем рады получить фидбэк! <br> Если тебе есть, что сказать - заполни эту форму</h2>
+							<h2>Мы будем рады получить фидбэк! <br> Если тебе есть, что сказать - заполни эту форму</h2>
 						</div>
 					</div>
 				</div>
@@ -206,7 +206,7 @@
 	var $form = $('form#feedback'),
     url = 'https://script.google.com/macros/s/AKfycbyGAPDIkhSD-i1zT27jYvjaYDFaTVd3UHtrPwFdkqUyzdoPv97U/exec'
 
-$('#submit').on('click', function(e) {
+$('#submit-form').on('click', function(e) {
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
