@@ -47,6 +47,13 @@ ul:after {
     float: none;
 }
 
+.nav.menu.nav-pills {
+    text-align: center;
+}
+.nav-tabs > li, .nav-pills > li {
+    display: inline-block;
+}
+
 ul.menu > li {
     float: left;
     position: relative;
