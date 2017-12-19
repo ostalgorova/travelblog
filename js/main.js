@@ -1,17 +1,17 @@
 ;(function () {
-	
+
 	'use strict';
 
 
 
-	// iPad and iPod detection	
+	// iPad and iPod detection
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
 	};
 
 	var isiPhone = function(){
 	    return (
-			(navigator.platform.indexOf("iPhone") != -1) || 
+			(navigator.platform.indexOf("iPhone") != -1) ||
 			(navigator.platform.indexOf("iPod") != -1)
 	    );
 	};
@@ -33,11 +33,11 @@
 			if ( $('#navbar').is(':visible') ) {
 				$(this).removeClass('active');
 			} else {
-				$(this).addClass('active');	
+				$(this).addClass('active');
 			}
 
-			
-			
+
+
 		});
 
 	};
@@ -46,16 +46,16 @@
 	var goToTop = function() {
 
 		$('.js-gotop').on('click', function(event){
-			
+
 			event.preventDefault();
 
 			$('html, body').animate({
 				scrollTop: $('html').offset().top
 			}, 500);
-			
+
 			return false;
 		});
-	
+
 	};
 
 
@@ -99,9 +99,9 @@
 	var navigationSection = function() {
 
 		var $section = $('section[data-section]');
-		
+
 		$section.waypoint(function(direction) {
-		  	
+
 		  	if (direction === 'down') {
 		    	navActive($(this.element).data('section'));
 		  	}
@@ -120,7 +120,7 @@
 	};
 
 
-	
+
 
 
 	// Window Scroll
@@ -141,8 +141,8 @@
 						header.removeClass('navbar-fixed-top fh5co-animated slideInDown slideOutUp');
 					}, 100 );
 				}
-			} 
-			
+			}
+
 		});
 	};
 
@@ -155,7 +155,7 @@
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -168,18 +168,18 @@
 							el.removeClass('item-animate');
 						},  k * 200, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '85%' } );
 	};
-	
 
 
-	
-	
+
+
+
 
 	// Document on load.
 	$(function(){
@@ -199,9 +199,27 @@
 
 		// Animations
 		contentWayPoint();
-		
+
 
 	});
 
 
 }());
+
+
+	var $form = $('form#feedback'),
+	    url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
+
+	$('#submit').on('click', function(e) {
+	  e.preventDefault();
+	  var jqxhr = $.ajax({
+	    url: url,
+	    method: "GET",
+	    dataType: "json",
+	    data: $form.serializeObject()
+	  }).success(
+
+
+				text = "Спасибо! Мы ответим как-только-так-сразу :)";
+	  );
+	})
