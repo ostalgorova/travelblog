@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -344,6 +344,12 @@ footer small {
 footer .social {
   text-align: center;
 }
+
+body .preview {
+
+   padding-right: 2em 15px !important 
+}
+
 
 .section-heading {
   float: left;
