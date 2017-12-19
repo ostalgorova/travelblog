@@ -33,6 +33,10 @@ a:focus, a:active {
   outline: none;
 }
 
+ul class="nav text-center > li:hover > ul class="submenu" {
+    display: block;
+}
+
 p {
   margin-bottom: 1.5em;
   font-size: 20px;
