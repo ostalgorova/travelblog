@@ -33,6 +33,62 @@ a:focus, a:active {
   outline: none;
 }
 
+
+ul {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul:after {
+    display: block;
+    content: "";
+    clear: both;
+    float: none;
+}
+
+nav.submenu {
+    text-align: inherit;
+}
+
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 0px;
+    color: white;
+    background-color: none;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 105px;
+    top: 30px;
+    background-color: #52d3aa;
+    background-position: 460px 0px;
+}
+
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 0px;
+    color: black;
+    background-color: #52d3aa;
+    background-position: 460px 0px;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
 p {
   margin-bottom: 1.5em;
   font-size: 20px;
