@@ -179,17 +179,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
   }
 }
-#fh5co-header .nav li:first-child {
+
+#fh5co-header .nav ul.submenu {
   margin-left: 0;
 }
 
-#fh5co-header .nav li:second-child {
-    margin-left: 0;
-  }
-  
- #fh5co-header .nav li:third-child {
-    margin-left: 0;
-   }
   
 #fh5co-header .nav li a {
   font-family: "Roboto Slab", Arial, sans-serif;
