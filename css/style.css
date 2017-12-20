@@ -71,7 +71,7 @@ ul.submenu {
     width: 105px;
     top: 30px;
     background-color: #52d3aa;
-    background-position: center;
+    background-position: inherit;
 }
 
 ul.submenu > li {
@@ -82,10 +82,11 @@ ul.submenu > li > a {
     padding: 0px;
     color: black;
     background-color: #52d3aa;
-    background-position: center;
+    background-position: inherit;
     text-decoration: underline;
-  color: white;
+  text-decoration-color: white;
 }
+
 ul.submenu > li > a:hover {
     text-decoration: underline;
   color: white;
