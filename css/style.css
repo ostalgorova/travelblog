@@ -49,7 +49,7 @@ ul:after {
 }
 
 nav.submenu {
-    text-align: center;
+    text-align: center -40px;
 }
 
 ul.menu > li {
