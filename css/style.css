@@ -72,6 +72,9 @@ ul.submenu {
     top: 30px;
     background-color: #52d3aa;
     background-position: inherit;
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-allign: inherit;
 }
 
 ul.submenu > li {
@@ -85,6 +88,7 @@ ul.submenu > li > a {
     background-position: inherit;
     text-decoration: underline;
   text-decoration-color: white;
+  text-align: inherit;
 }
 
 ul.submenu > li > a:hover {
