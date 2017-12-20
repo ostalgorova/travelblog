@@ -42,7 +42,7 @@ ul {
 }
 ul:after {
     display: block;
-    content: ' ';
+    content: "";
     clear: both;
     float: none;
 }
@@ -69,7 +69,7 @@ ul.submenu {
     display: none;
     position: absolute;
     width: 105px;
-    top: 37px;
+    top: 30px;
     background-color: #52d3aa;
 }
 
