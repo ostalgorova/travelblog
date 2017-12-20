@@ -40,6 +40,7 @@ ul {
     padding: 0;
     list-style: none;
 }
+
 ul:after {
     display: block;
     content: "";
@@ -47,10 +48,11 @@ ul:after {
     float: none;
 }
 
-.nav.menu.nav-pills {
+nav.submenu.nav-pills {
     text-align: center;
 }
-.nav-tabs > li, .nav-pills > li {
+
+nav-tabs > li, .nav-pills > li {
     display: inline-block;
 }
 
@@ -72,9 +74,6 @@ ul.submenu {
     top: 30px;
     background-color: #52d3aa;
     background-position: inherit;
-  text-decoration: underline;
-  text-decoration-color: white;
-  text-allign: inherit;
 }
 
 ul.submenu > li {
@@ -86,14 +85,6 @@ ul.submenu > li > a {
     color: black;
     background-color: #52d3aa;
     background-position: inherit;
-    text-decoration: underline;
-  text-decoration-color: white;
-  text-align: inherit;
-}
-
-ul.submenu > li > a:hover {
-    text-decoration: underline;
-  color: white;
 }
 
 ul.menu > li:hover > ul.submenu {
