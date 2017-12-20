@@ -71,6 +71,7 @@ ul.submenu {
     width: 105px;
     top: 30px;
     background-color: #52d3aa;
+    background-position: center;
 }
 
 ul.submenu > li {
@@ -80,7 +81,8 @@ ul.submenu > li > a {
     display: block;
     padding: 0px;
     color: black;
-    background-color: #52d3aa
+    background-color: #52d3aa;
+    background-position: center;
     text-decoration: underline;
   color: white;
 }
