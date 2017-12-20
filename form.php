@@ -92,49 +92,55 @@
 		  </div>
 		</header>
 		<!-- END: header -->
-
-    <p>Welcome <?php echo $_POST["firstname"]; ?><br>
-    Your email address is: <?php echo $_POST["email"]; ?></p>
-
-
-		<section id="services">
+		<section id="intro">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4 animate-box">
-						<div class="service">
-							<div class="service-icon">
-								<i class="icon-pencil"></i>
-							</div>
-							<h2>Путевые заметки</h2>
-							<p>Дневник путешествий <a href="dasha.html">Даши</a>, <a href="olya.html">Оли</a> и <a href="lisa.html">Лизы</a></p>
-						</div>
-					</div>
-
-				<div class="col-md-4 animate-box">
-						<div class="service">
-							<div class="service-icon">
-								<i class="icon-check"></i>
-							</div>
-							<h2>Полезности</h2>
-							<p>Собираем общие советы, лайфхаки и полезные ресурсы <a href="lifehack.html">здесь</a></p>
-						</div>
-					</div>
-
-					<div class="col-md-4 animate-box">
-						<div class="service">
-							<div class="service-icon">
-								<i class="icon-map"></i>
-							</div>
-							<h2>Карта</h2>
-							<p>Интерактивная <a href="map.html">карта</a>: где мы были и куда еще обязательно поедем!</p>
+					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+						<div class="intro animate-box">
+							<h1>Связаться с нами</h1>
+							<h2>Мы будем рады получить фидбэк! <br> Если тебе есть, что сказать - заполни эту форму</h2>
 						</div>
 					</div>
 				</div>
-			</div>
+			<div>
 		</section>
 
+    <?php
+    // Check variables
 
-https://script.google.com/macros/s/AKfycbyGAPDIkhSD-i1zT27jYvjaYDFaTVd3UHtrPwFdkqUyzdoPv97U/exec
+
+    $firstname=$_POST['firstfiname'];
+    $lastname=$_POST['lastname'];
+
+    $email=$_POST['email'];
+    $phone=$_POST['phone'];
+
+    $message=$_POST['message'];
+
+    //include the date the form was submitted
+    $date = gmdate("M d Y");
+
+    //Thank the user for submitting the form
+    print "<h2>Спасибо, $firstname, мы свяжемся с Вами в скором времени</h2>";
+    print "$date";
+    echo "<h2>Спасибо, $firstname, мы свяжемся с Вами в скором времени</h2>";
+    echo "$date";
+    // send the form data to an  email adress
+    $to = "ostalgorova@gmail.com";
+    $subject = "Travelblog";
+    $body = "Data: $date \n
+
+        Name: $firstname $lastname\n
+
+        E-mail: $email \n
+        Phone: $phone \n
+
+        Message: $message \n";
+
+
+    mail ($to, $subject, $body);
+    ?>
+
 
 
 
@@ -153,8 +159,7 @@ https://script.google.com/macros/s/AKfycbyGAPDIkhSD-i1zT27jYvjaYDFaTVd3UHtrPwFdk
 		</footer>
 	</div>
 
-	<script>
-	var $form = $('form#feedback'),
+<!--	var $form = $('form#feedback'),
 	    url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
 
 	$('#submit').on('click', function(e) {
@@ -168,7 +173,7 @@ https://script.google.com/macros/s/AKfycbyGAPDIkhSD-i1zT27jYvjaYDFaTVd3UHtrPwFdk
 	    // do something
 	  );
 	})
-</script>
+</script> -->
 	<!-- END: box-wrap -->
 
 	<!-- jQuery -->
