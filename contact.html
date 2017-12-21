@@ -204,22 +204,7 @@
 		</footer>
 	</div>
 
-<script>
-var $form = $('#feedback'),
-	    url = 'https://script.google.com/macros/s/AKfycbyGAPDIkhSD-i1zT27jYvjaYDFaTVd3UHtrPwFdkqUyzdoPv97U/exec'
 
-	$('#submit').on('click', function(e) {
-	  e.preventDefault();
-	  var jqxhr = $.ajax({
-	    url: url,
-	    method: "GET",
-	    dataType: "json",
-	    data: $form.serializeObject()
-	  }).success(
-	    // do something
-	  );
-	})
-</script>
 	<!-- END: box-wrap -->
 
 	<!-- jQuery -->
@@ -235,6 +220,22 @@ var $form = $('#feedback'),
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+	<script>
+	var $form = $('#feedback'),
+		    url = 'https://script.google.com/macros/s/AKfycbyGAPDIkhSD-i1zT27jYvjaYDFaTVd3UHtrPwFdkqUyzdoPv97U/exec'
+
+		$('#submit').on('click', function(e) {
+		  e.preventDefault();
+		  var jqxhr = $.ajax({
+		    url: url,
+		    method: "GET",
+		    dataType: "json",
+		    data: $form.serializeObject()
+		  }).success(
+		    // do something
+		  );
+		})
+	</script>
 
 	</body>
 </html>
