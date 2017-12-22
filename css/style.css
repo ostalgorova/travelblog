@@ -179,6 +179,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-left:0px;
 }
 
+#fh5co-header .nav li:second-child {
+  margin-left:0px;
+}
+
+#fh5co-header .nav li:third-child {
+  margin-left:0px;
+}
+
 @media screen and (max-width: 480px) {
   #fh5co-header .nav li {
     width: 100%;
