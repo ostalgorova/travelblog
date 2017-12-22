@@ -67,20 +67,27 @@
 			<div class="container">
 				<nav class="navbar navbar-default">
 					<div class="row">
-						<div class="col-md-3">
+						<div class="col-md-4">
 							<div class="fh5co-navbar-brand">
 								<a class="fh5co-logo" href="index.html"><img src="images/brand-nav.png" alt="Closest Logo"></a>
 							</div>
 						</div>
-						<div class="col-md-6">
-							<ul class="nav text-center">
-								<li><a href="index.html"><span>О нас</span></a></li>
-								<li><a href="insider.html">Блог</a></li>
-
-								<li class="active"><a href="contact.html">Контакты</a></li>
-							</ul>
-						</div>
-						<div class="col-md-3">
+						<div class="col-md-4">
+  <ul class="nav text-center">	  
+	  <ul class="menu">
+    <li class="active"><a href="#" title="О нас">О нас</a></li>
+      <li><a href="insider.html" title="Блог">Блог</a>
+	  <ul class="submenu">
+		  <li><a href="dasha.html" title="Даша">Даша</a></li>
+		  <li><a href="olya.html" title="Оля">Оля</a></li>
+		  <li><a href="lisa.html" title="Лиза">Лиза</a></li>
+          </ul>
+	</li>    
+    <li><a href="contact.html" title="Контакты">Контакты</a></li>
+  </ul>
+	   </ul>
+		  </div>
+						<div class="col-md-4">
 							<ul class="social">
 								<li><a href="https://www.facebook.com/elizabeth.ovchinnikova.338" target="_blank"><i class="icon-facebook"></i></a></li>
 								<li><a href="https://vk.com/ostalgorova" target="_blank"><i class="icon-vk"></i></a></li>
