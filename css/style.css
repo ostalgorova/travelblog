@@ -49,7 +49,7 @@ ul:after {
 }
 
 nav.submenu {
-    text-align: center -40px;
+    text-align: center;
 }
 
 ul.menu > li {
@@ -71,7 +71,6 @@ ul.submenu {
     top: 30px;
     background-color: #52d3aa;
     background-position: 460px 0px;
-  text-align: center -25px;
 }
 
 ul.submenu > li {
@@ -83,6 +82,7 @@ ul.submenu > li > a {
     color: black;
     background-color: #52d3aa;
     background-position: 460px 0px;
+  margin-left: 0;
 }
 
 ul.menu > li:hover > ul.submenu {
@@ -175,17 +175,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 50px;
 }
 
-li:first-child
-{margin-left:0px;
-}
-
-
-#fh5co-header .nav li:fourth-child {
-  margin-left: 0;
-}
-
-#fh5co-header .nav li:fifths-child {
-  margin-left: 0;
+#fh5co-header .nav li:first-child {
+  margin-left:0px;
 }
 
 @media screen and (max-width: 480px) {
