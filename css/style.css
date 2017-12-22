@@ -71,6 +71,7 @@ ul.submenu {
     top: 30px;
     background-color: #52d3aa;
     background-position: 460px 0px;
+  text-align: center -40px;
 }
 
 ul.submenu > li {
