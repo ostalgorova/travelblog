@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>SU-site Form</title>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+<meta name=description" content="Scripture Union in Moscow">
+<link rel="stylesheet" type="text/css" href="css/template.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css"> 
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body>
+<div id="wrapper">
+
+<img id="banner" src="images/banner.jpg" alt="Scripture Union in Moscow" title="Scripture Union in Moscow" weight="auto" align="center" >
+
+<nav>
+<label for="show-menu" class="show-menu"><img src="images/hamburger.png"></label>
+<input type="checkbox" id="show-menu" role="button">
+
+<ul id="menu">
+ <li><a href="index.html">About us</a></li>
+<li><a href="events.html">Our events &#8659; </a>
+      <ul class="hidden">
+      <li><a href="camp.html">Children camp</a></li>
+      <li><a href="teencamp.html">Teenagers</a></li>
+      <li><a href="club.html">Children Club</a></li>
+      <li><a href="cinema.html">Cinema Club</a></li>
+      </ul></li>
+      
+<li><a href="#">Gallery &#8659;</a>
+      <ul class="hidden">
+      <li><a href="album.html">Photo gallery</a></li>
+      <li><a href="video.html">Video gallery</a></li>
+      </ul></li>      
+<li><a href="form.html">Book Camp</a></li>
+<li><a href="contact.html">Contacts</a></li>
+<li><a href="formru.html" ><img src="images/ru.jpg"> </a></li>
+</ul>
+
+</nav> 
+
+
+
+<div id="content">
+
+ <h1 font-size="20px">&nbsp If you want to send yor child to our Camp...<h1>
+ 
+<div class="block">
+
+<h2> Fill this form</h2>
+  
+  <form method="post" action="form.php">
+  
+  <input type="hidden" name="hidden" id="hidden" value="Camp visitor">
+  
+ <p><input type="text" name="name" id="name" required="required"> <label for="name"> Child's first name and last name</label>
+  <br><br>
+  <input type="date" name="age" id="age" > <label for="age">Date of birth</label><br><br>
+   
+     <input type="text" name="pname" id="pname" required="required"> <label for="pname"> First name and last name of one of the parent</label>
+  <br><br>
+   <input type="email" name="email" id="email"> <label for="email">Contact E-mail</label>
+  <br><br>
+  <input type="text" name="phone" id="phone" style="width: 150px;"><label for="phone"> Contact phone</label><br>
+  <br></p>
+  
+  <p>We will provide you with some more information. How do you prefer to be contacted?</p>
+   <p>  <select name="contact" id="contact"> 
+        <option value="email">E-mail</option>
+        <option value="phone">Phone</option>
+      </select></p>
+  
+  <p> Choose the date of the Camp<br>
+   <input type="radio" name="date" id="first" value="first" checked="checked"><label for="date">June 18-26</label><br>
+   <input type="radio" name="date" id="second" value="second"><label for="date">July 8-16</label><br>
+   <input type="radio" name="date" id="third" value="third"><label for="date">July 18-24</label><br>
+   <input type="radio" name="date" id="fourth" value="fourth"><label for="date">August 3-9</label><br><br>
+   </p>
+  
+    <p> Extra information. What should we know about you?</p>
+   <p>
+   <p>
+     <textarea name="extra" id="extra" placeholder="Type here..."></textarea>
+     <label for="extra">Extra</label>
+ 
+ <p> Whould you like to receive newsletters about our events? <br>
+ <input type="checkbox" name="news" id="news" value="Yes"><label for="news">Yes</p>
+
+
+     <input type="submit" name="submit" id="submit" value="Send">
+     <input type="reset" name="reset" id="reset" value="Clear">
+     
+     </div>
+   </p>
+ <p><strong>Privacy Policy:</strong> We will not share any of your information with anyone else. </p>
+</div>
+
+<footer>
+<p><a href="https://www.facebook.com/profile.php?id=100008199160176" target="_blank"> <i class="fa fa-facebook-square fa-2x"></i> </i></a>
+<a href="http://vk.com/semhozodp" target="_blank"><i class="fa fa-vk fa-2x"></i></a></p>
+
+<p> Made by Olga Stalgorova &#169<br>
+ Last Updated September 28, 2015 </p>
+</footer>
+
+
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

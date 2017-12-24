@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav {margin: 10px;
+     margin-bottom: 70px;
+	padding-left: 0px;
+	z-index: 10;}
+
+#menu {margin: 0 auto;}
+
+/* strip the ul of padding and list styling */
+
+nav ul { list-style-type: none;
+     margin: 0; 
+     padding: 0; 
+     position: absolute; 
+	 
+
+    }
+
+/* create a horizontal list with spacing */
+
+nav li {display: inline-block; 
+   float: left; 
+    margin: 1px;
+
+    }
+/* style the menu links */
+
+ nav li a {display: block; 
+        min-width: 140px; 
+        height: 40px; 
+        text-align: center; 
+        line-height: 40px; 
+        font-family: verdana, sans-serif; 
+        color: black; 
+        background: #9c090f; 
+		border: 2px solid black;
+		border-radius: 5px;
+        text-decoration: none;
+		text-transform:uppercase;
+		
+        } 
+
+/* hover state for top  level links */
+
+nav li:hover a {color: white; }
+
+
+
+/* ------- Style for drop down links ----------  */
+
+nav li:hover ul a {background-color: white; 
+               color: black; 
+               height: 30px; 
+               line-height: 30px;
+			   font-size: 14px;
+			  
+               }
+			   
+/* Style hover drop down lists*/			   
+nav li:hover ul a:hover {background-color: white; 
+                     color: #9c090f; 
+                     height: 30px; 
+                     line-height: 30px;
+					 
+                     }
+/* hide drop down links until they are activated */
+
+nav li ul {display: none; }
+
+/* make drop down links vertical */
+
+li ul li {display: block; 
+          float: none; 
+		 
+          }
+	/* prevent text wrapping */
+
+li ul li a {width: auto; 
+            min-width: 130px; 
+            padding: 0 5px; 
+			z
+            } 
+
+/* display drop down on hover */
+
+nav ul li a:hover + .hidden, .hidden:hover { display: block;} 
+
+/* Style show menu label button - hide by default */
+
+.show-menu { color: #9c090f; 
+             background: white;
+			 border: 2px solid #9c090f; 
+             text-align: center; 
+             padding: 10px 0; 
+             display: none; 
+			 border-radius: 20px;
+			 width: 100%;
+            }
+	  
+/* hide checkbox */
+
+nav input[type=checkbox] {  display: none; }
+
+/* show the menu when the invisible checkbox is selected */
+
+nav input[type=checkbox]:checked ~ #menu { display: block; }	
+
+ /* Responsive Styles */
+
+@media screen and (max-width: 1000px) 
+{
+
+nav ul { position:static; 
+     display: none; 
+   }
+
+li {margin-bottom: 1px; }
+
+/* make all menu links full width */
+ 
+nav ul li, li a { width: 100%; }
+
+/* display show menu link */
+.show-menu {display: block; }
+
+#content {margin-top:-55px;}
+}
+		  
+		  
+		  
+		  
+		  
+		  
