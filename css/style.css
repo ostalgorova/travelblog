@@ -71,7 +71,7 @@ ul.submenu {
     width: 105px;
     top: 30px;
     background-color: #52d3aa;
-    background-position: 460px 0px;
+    background-position: 400px 0px;
 }
 
 ul.submenu > li {
@@ -82,7 +82,7 @@ ul.submenu > li > a {
     padding: 0px;
     color: black;
     background-color: #52d3aa;
-    background-position: 460px 0px;
+    background-position: 400px 0px;
 }
 
 ul.menu > li:hover > ul.submenu {
